@@ -1,0 +1,28 @@
+WEB
+
+    HTML    :   문서의 구조
+    CSS     :   구조에 모양을 더한다.
+    JavaScript : 구조 수정 및 데이터 변경, 태그 제어 (변수로 구성)
+        jQuery : (함수로 구성)
+
+=========
+
+1. IDE 호출 : Eclipse Java-ee
+
+        eclipse download 
+        => pakages 
+        => 2020 - 06 
+        => Eclipse IDE for Enterprise Java Developers
+        => Windows x86_64
+        => class - html - app, git, source 생성
+        => app 폴더 안에 다운로드 받은 파일 넣기
+        => eclipse 실행, 워크스페이스는 source 폴더로 지정, C:\class\html\source
+        => 프로젝트 static web project를 만든다. 프로젝트 이름 : black
+            [참고]
+                static web project : 이미 만들어진 문서를 서버가 제공하는 프로젝트
+                dynamic web project : 요청 내용에 따라서 그때그때 서버가 문서를 만들어서(상황에 따라 변경하면서) 제공하는 프로젝트
+
+                서버가 응답해주는 문서는 jsp가 아니고 jsp로 만들어낸 html 문서
+        => 
+
+
