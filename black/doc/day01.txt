@@ -7,14 +7,16 @@ WEB
 
 =========
 
-1. IDE 호출 : Eclipse Java-ee
+1. 이클립스 설치
 
-        eclipse download 
+	IDE 호출 : Eclipse Java-ee
+
+        구글에 eclipse download 
         => pakages 
-        => 2020 - 06 
+        => MORE DOWNLOADS 2020 - 06(4.16)
         => Eclipse IDE for Enterprise Java Developers
         => Windows x86_64
-        => class - html - app, git, source 생성
+        => class 폴더 - html - app, git, source 생성
         => app 폴더 안에 다운로드 받은 파일 넣기
         => eclipse 실행, 워크스페이스는 source 폴더로 지정, C:\class\html\source
         => 프로젝트 static web project를 만든다. 프로젝트 이름 : black
@@ -23,6 +25,25 @@ WEB
                 dynamic web project : 요청 내용에 따라서 그때그때 서버가 문서를 만들어서(상황에 따라 변경하면서) 제공하는 프로젝트
 
                 서버가 응답해주는 문서는 jsp가 아니고 jsp로 만들어낸 html 문서
-        => dddd
+       
+       => 환경변수 설정, %NODE_HOME%\
 
+TOMCAT
+	[참고]
+	프로그램 버전 
+		major.minor.micro   
+		
+2. Node.js 설치
+	구글에 Node.js
+	=> 16.14.2 (안정적인 구 버전)
+	=> 다른 운영체제
+	=> windows binary(.zip) 64bit
+	
+
+3. apache tomcat 다운
+	
+	apache tomcat 검색
+	=> tomcat 8 software downloads
+	=> 64-bit windows zip
+	
 
