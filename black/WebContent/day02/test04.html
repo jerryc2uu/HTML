@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<style>
+	.bnt {
+		width: 16.66%;
+		border: none;
+		font-size: 12pt;
+		cursor: pointer;
+	}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body style="text-align:center; color: white;">
+	<div style ="display: inline-block; width: 800pxl">
+		<header style="text-align: center; height: 100px; background-color: green;">** 제리 누나의 홈페이지입니다 ^^ **
+			<img src="/black/image/img/jerry02.jpg" style="height: 100px; float: right;">
+		</header>
+		<nav style="height: 60px; background-color: yellow;">
+			<button type="button" id="btn1" class="btn"> 기본정보
+			</button>
+			<button type="button" id="btn2" class="btn">
+				<a href="/black/image/img/이제리.jpg">좋아하는 것</a>
+			</button>
+			<button type="button" id="btn3" class="btn">공부하는 것</button>
+			<button type="button" id="btn4" class="btn">어려운 것</button>
+			<button type="button" id="btn5" class="btn">
+				<a href="/black/image/img/구디.jpg">희망진로</a>
+			</button>
+			<button type="button" id="btn6" class="btn">
+				<a href="/black/image/img/월급.jpg">지원동기</a></button>
+		</nav>
+		<section style="display: inline-block; width: 80%; height: 300px; background-color: red;">
+			
+		</section>
+			<aside style="display: inline-block; width: 20%; height: 300px; background-color: blue; float: right;">
+				<img src="/black/image/img/jerry01.jpg" style="width: 100%; height: 300px;">
+			</aside>
+		<footer style="height: 100px; background-color: orange;">불펌을 금지합니다.</footer>
+	</div>
+</body>
+<script type="text/javascript" style="color: white;">
+		document.getElementById('btn1').onclick = function(){ /* 자바스크립트에서는 함수도 객체, 변수에 담을 수 있다. */
+		document.getElementById('article').innerHTML = '<h4>이름 : 박소연</h4> + <h4>귀빠진 날 : 1995년 10월 24일</h4> + <h4> 성별 : 여자 </h4> + <h4>집 : 신림동</h4> + <h4>혈액형 : AB형</h4>'
+			};
+</script>
+</html>

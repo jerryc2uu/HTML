@@ -46,4 +46,40 @@ TOMCAT
 	=> tomcat 8 software downloads
 	=> 64-bit windows zip
 	
+	
+	
+	
+	
+=================================
+
+
+HTML5
+
+인터넷 : 미국 군사 기술
+
+HTML : 문서 작성하는 언어
+
+
+
+일반태그 : 이미지, 내용 등, 서버에 전달은 불가능
+
+
+
+미리 정의되어 있는 태그 : w3c
+사용자 정의 태그 : 데이터 전달 목적
+
+h태그 : h1 - h6
+
+
+속성값
+자바스크립트 ''
+html ""
+
+attribute, property
+
+
+
+class - css
+id - javascript
+	
 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<style>
+	.bnt {
+		width: 16.66%;
+		border: none;
+		font-size: 12pt;
+		cursor: pointer;
+	}
+	
+	.btn:hover {
+		background-color: orange;
+	}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body style="text-align:center; color: black;">
+	<div style ="display: inline-block; width: 800px;">
+		<header style="text-align: center; height: 100px; background-color: Aqua;">** 귀여운 댕댕이 제리 누나의 홈페이지입니다 ^^ **
+			<img src="/black/image/img/jerry02.jpg" style="height: 100px; float: right;">
+		</header>
+		<nav style="height: 60px; background-color: Aquamarine;">
+			<button type="button" id="btn1" class="btn"> 기본정보
+			</button>
+			<button type="button" id="btn2" class="btn">좋아하는 것
+			</button>
+			<button type="button" id="btn3" class="btn">공부하는 것
+			</button>
+			<button type="button" id="btn4" class="btn">어려운 것
+			</button>
+			<button type="button" id="btn5" class="btn">희망진로
+			</button>
+			<button type="button" id="btn6" class="btn">지원동기
+			</button>
+		</nav>
+		<section style="display: inline-block; width: 80%; height: 300px; color: black; background-color: DeepSkyBlue;">
+			<article  class="article"
+		 		style="display: inline-block; float: left; width: 600px; height: 600px; font-size: 14pt; font-weight: bold;" 
+		 		id="article">
+		 		제리 누나 홈페이지에 오신 걸 환영합니다!
+			</article>
+		</section>
+			<aside style="display: inline-block; width: 20%; height: 300px; background-color: DeepSkyblue; float: right;">
+				<img src="/black/image/img/jerry01.jpg" style="width: 100%; height: 300px;">
+			</aside>
+		<footer style="height: 100px; background-color: LightBlue;">불펌을 금지합니다.</footer>
+	</div>
+</body>
+<script type="text/javascript">
+	document.getElementById('btn1').onclick = function(){
+		document.getElementById('article').innerHTML = '<h4>이름 : 박소연</h4><h4>출생년도 : 1995년 10월 24일</h4><h4>고향 : 서울</h4><h4>집 : 서울 신림동</h4>'
+														+ '<h4>혈액형 : AB형';
+	};
+	document.getElementById('btn2').onclick = function(){
+		document.getElementById('article').innerHTML = '<img src="/black/image/img/jerry02.jpg" style="width: 110%; height: 300px;">';
+	};
+	document.getElementById('btn3').onclick = function(){
+		document.getElementById('article').innerHTML = '<h4>html을 공부합니다!</h4>';
+	};
+	document.getElementById('btn4').onclick = function(){
+		document.getElementById('article').innerHTML = '<h4>자바 짱시룸!</h4>';
+	};
+	document.getElementById('btn5').onclick = function(){
+		document.getElementById('article').innerHTML = '<img src="/black/image/img/구디.jpg" style="width: 110%; height: 300px;">';
+	};
+	document.getElementById('btn6').onclick = function(){
+		document.getElementById('article').innerHTML = '<img src="/black/image/img/월급.jpg" style="width: 110%; height: 300px;">';
+	};
+</script>
+</html>

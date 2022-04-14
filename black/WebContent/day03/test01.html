@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>block tag</h2><!-- 100% 차지, 만일 사이즈 준다면 남는 부분은 마진으로 처리해서 100% 차지, 다른 태그가 올 수 없다. -->
+	<div>
+		<div style="width: 100px; height: 100px; background-color: aqua;">
+		div
+		</div>
+		<span>span</span>
+		<div style="width: 100px; height: 100px; background-color: orange;">
+		div
+		</div>
+		<div style="width: 100px; height: 100px; background-color: orange;">
+		div
+		</div>
+	</div>
+	<hr>
+	<h2>inline-block tag</h2>
+	<div>
+<!-- 	<div style="font-size: 0pt;"> -->
+		<div style="display: inline-block; width: 10%; height: 100px; background-color: green; font-size: 10pt; float: left;">
+		div
+		</div>
+<!-- 
+				여기부터 다음 태그까지는 enter키와 tab키가 추가돼 있다. 
+				이런 경우 들어간 키들을 하나로 합쳐 공백으로 처리
+				
+				이 공백을 없애는 방법
+					1. 주석으로 처리
+					2. 감싸는 태그의 폰트 크기를 0으로 셋팅
+					   폰트 크기 같은 속성은 상위 태그의 속성을 하위 태그가 그대로 물려받는다.
+					   결국 하위 태그에 입력한 문자가 안 보이게 된다.
+					   따라서 하위에서는 보여줄 폰트 크기를 다시 부여한다. 
+-->
+	 	<div style="display: none; width: 100px; height: 100px; background-color: blue; font-size: 10pt; visibility: hidden;">
+		div
+		</div>
+<!--  태그 감추는 방법
+		
+		1. display 속성값을 none으로 처리하는 방법
+			=> 원래부터 태그가 없었던 것처럼 표현된다.
+			 
+		2. visibility 속성값을 hidden으로 처리하는 방법
+			=> 보이지만 않을 뿐이고 원래 있던 위치의 공간은 확보하고 있다.
+-->
+		<div style="display: inline-block; width: 90%; height: 100px; background-color: pink; font-size: 10pt; float: left;">
+		div
+		</div>
+	</div>
+	<hr>
+	<h2>inline tag</h2>
+	<div>
+		<!-- 아래 태그들은 입력되는 내용에 따라 사이즈가 자동 결정된다. 
+				사이즈도 갖고 옆에 다른 태그가 오게 하려면? 
+				inline-block tag : display 속성이지 태그가 아니다. -->
+		<a>여기는 a 태그</a>
+		<div style="border: 1px solid red">사이에 낀 block</div>
+		<input type="text" name="test" style="height: 20px; width: 200px;">
+		<label>입 력 : </label>
+		<img src="../image/img/jerry01.jpg" width="100px" height="auto">
+		<span>여기도 인라인 태그</span>
+	</div>
+</body>
+</html>
