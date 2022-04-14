@@ -11,31 +11,44 @@
 </head>
 <body>
 	<div style="display: inline-block; width: 800px;">
-		<header style="height: 100px; background-color: #ffcc00;">제리 누나 박소연의 홈페이지!
+		<header style="height: 100px; background-color: #ffcc00;">
+			<h1><i>제리 누나 박소연의 홈페이지입니다!</i></h1>
 		</header>
-		<nav style="height: 60px; background-color: #ffff00; font-size:0;">
-				<button type="button" id="btn1" class="btn"> 기본정보
-				</button>
-				<button type="button" id="btn2" class="btn">좋아하는 것
-				</button>
-				<button type="button" id="btn3" class="btn">공부하는 것
-				</button>
-				<button type="button" id="btn4" class="btn">어려운 것
-				</button>
-				<button type="button" id="btn5" class="btn">희망진로
-				</button>
-				<button type="button" id="btn6" class="btn">지원동기
-				</button>
+		<nav style="font-size: 0pt; background-color: #ffff00;">
+			<button type="button" id="btn1" class="btn" style="width: 20%">기본정보</button>
+			<button type="button" id="btn2" class="btn" style="width: 20%">공부</button>
+			<button type="button" id="btn4" class="btn" style="width: 20%">어려운부분</button>
+			<button type="button" id="btn5" class="btn" style="width: 20%">희망진로</button>
+			<button type="button" id="btn6" class="btn" style="width: 20%">지원동기</button>
 		</nav>
-		<section style="display: inline-block; width: 80%; height: 300px; color: bloack; float: left;">
-			<img src="/black/image/img/jerry01.jpg" style="width: 100%; height: 300px;">
+		<section style="display: inline-block; width: 80%; height: 600px; background-color: #ffff99;">
 		</section>
-			<aisde style="display: inline-block; width: 20%; height: 300px; background-color: #ffff99;">
-			제리는 귀여운 댕댕이입니다!
-			</aisde>
+		<aside style="display: inline-block; width:20%; height: 600px;">
+		</aside>
 		<footer style="height: 100px; background-color: #ffffcc;">
-		모든 사진의 저작권은 제리 누나에게 있습니다.
+			<ins>모든 사진의 저작권은 제리 누나에게 있습니다.</ins>
 		</footer>
 	</div>
 </body>
+<script type="text/javascript">
+	document.getElementById('btn1').onclick = function(){
+		document.getElementById('article').innerHTML = '<h4>이름 : 박소연</h4><h4>출생년도 : 1995년 10월 24일</h4><h4>고향 : 서울</h4><h4>집 : 서울 신림동</h4>'
+														+ '<h4>혈액형 : AB형';
+	};
+	document.getElementById('btn2').onclick = function(){
+		document.getElementById('article').innerHTML = '<img src="/black/image/img/jerry02.jpg" style="width: 110%; height: 300px;">';
+	};
+	document.getElementById('btn3').onclick = function(){
+		document.getElementById('article').innerHTML = '<h4>html을 공부합니다!</h4>';
+	};
+	document.getElementById('btn4').onclick = function(){
+		document.getElementById('article').innerHTML = '<h4>자바 짱시룸!</h4>';
+	};
+	document.getElementById('btn5').onclick = function(){
+		document.getElementById('article').innerHTML = '<img src="/black/image/img/구디.jpg" style="width: 110%; height: 300px;">';
+	};
+	document.getElementById('btn6').onclick = function(){
+		document.getElementById('article').innerHTML = '<img src="/black/image/img/월급.jpg" style="width: 110%; height: 300px;">';
+	};
+</script>
 </html>
