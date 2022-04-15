@@ -11,19 +11,47 @@
 </head>
 <body>
 	<div style="display: inline-block; width: 800px;">
-		<header style="height: 100px; background-color: #ffcc00;">
+		<header style="height: 100px; background-color: #ffcc00; padding: 10px;">
 			<h1><i>제리 누나 박소연의 홈페이지입니다!</i></h1>
 		</header>
-		<nav style="font-size: 0pt; background-color: #ffff00;">
+		<nav style="font-size: 0pt; background-color: #ffff00; color:black; ">
 			<button type="button" id="btn1" class="btn" style="width: 20%">기본정보</button>
-			<button type="button" id="btn2" class="btn" style="width: 20%">공부</button>
-			<button type="button" id="btn4" class="btn" style="width: 20%">어려운부분</button>
-			<button type="button" id="btn5" class="btn" style="width: 20%">희망진로</button>
-			<button type="button" id="btn6" class="btn" style="width: 20%">지원동기</button>
+			<button type="button" id="btn2" class="btn" style="width: 20%">좋아하는것</button>
+			<button type="button" id="btn3" class="btn" style="width: 20%">싫어하는것</button>
+			<button type="button" id="btn4" class="btn" style="width: 20%">희망진로</button>
+			<button type="button" id="btn5" class="btn" style="width: 20%">지원동기</button>
 		</nav>
 		<section style="display: inline-block; width: 80%; height: 600px; background-color: #ffff99;">
+			<article  class="article"
+		 		style="display: inline-block; width: 100%; height: 600px; font-size: 14pt; font-weight: bold;" 
+		 		id="article">
+		 		<figure>
+		 			<img src="/black/image/img/japan.jpg" style="float: left; width: 100%; height: 500px;">
+		 			<figcaption style="color: blue;">교토부 아마노하시다테의 추억...</figcaption>
+		 		</figure>
+			</article>
 		</section>
-		<aside style="display: inline-block; width:20%; height: 600px;">
+		<aside style="display: inline-block; background-color: #ffff99; width:20%; height: 600px; float: right;">
+			<h3>귀염둥이 이제리</h3>
+			<ul style="list-style-type: square;">
+				<li><a href="../image/img/4개월.jpg" target="_self" >4개월</a></li>
+				<li><a href="../image/img/1살.jpg" target="_self" >1살</a></li>
+				<li><a href="../image/img/2살.jpg" target="_self" >2살</a></li>
+				<li><a href="../image/img/3살.jpg" target="_self" >3살</a></li>
+			</ul>
+			<h3>일본 여행</h3>
+			<ul style="list-style-type: square;">
+				<li><a href="../image/img/4개월.jpg" target="_self" >오사카</a></li>
+				<li><a href="../image/img/1살.jpg" target="_self" >교토</a></li>
+				<li><a href="../image/img/2살.jpg" target="_self" >고베</a></li>
+				<li><a href="../image/img/3살.jpg" target="_self" >나라</a></li>
+			</ul><h3>맛있는 음식~!</h3>
+			<ul style="list-style-type: square;">
+				<li><a href="../image/img/4개월.jpg" target="_self" >텐동</a></li>
+				<li><a href="../image/img/1살.jpg" target="_self" >파스타</a></li>
+				<li><a href="../image/img/2살.jpg" target="_self" >햄버거</a></li>
+				<li><a href="../image/img/3살.jpg" target="_self" >피자</a></li>
+			</ul>
 		</aside>
 		<footer style="height: 100px; background-color: #ffffcc;">
 			<ins>모든 사진의 저작권은 제리 누나에게 있습니다.</ins>
@@ -36,19 +64,16 @@
 														+ '<h4>혈액형 : AB형';
 	};
 	document.getElementById('btn2').onclick = function(){
-		document.getElementById('article').innerHTML = '<img src="/black/image/img/jerry02.jpg" style="width: 110%; height: 300px;">';
+		document.getElementById('article').innerHTML = '<video src="../resources/video/댕댕이.mp4" width="100%" height="600px" controls autoplay loop>';
 	};
 	document.getElementById('btn3').onclick = function(){
-		document.getElementById('article').innerHTML = '<h4>html을 공부합니다!</h4>';
+		document.getElementById('article').innerHTML = '<img src="/black/image/img/java.png" style="width: 100%; height: 100%;">';
 	};
 	document.getElementById('btn4').onclick = function(){
-		document.getElementById('article').innerHTML = '<h4>자바 짱시룸!</h4>';
+		document.getElementById('article').innerHTML = '<img src="/black/image/img/구디.jpg" style="width: 100%; height: 100%;">';
 	};
 	document.getElementById('btn5').onclick = function(){
-		document.getElementById('article').innerHTML = '<img src="/black/image/img/구디.jpg" style="width: 110%; height: 300px;">';
-	};
-	document.getElementById('btn6').onclick = function(){
-		document.getElementById('article').innerHTML = '<img src="/black/image/img/월급.jpg" style="width: 110%; height: 300px;">';
+		document.getElementById('article').innerHTML = '<img src="/black/image/img/월급.jpg" style="width: 100%; height: 100%;">';
 	};
 </script>
 </html>
