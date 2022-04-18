@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form method="GET" action="../day04/test01.html" name="frm">
+		<input type="text" name="test" id="test">	<!-- 파라미터에 쓰이기 때문에 필수 -->
+		<button type="button" id="btn">click</button>
+	</form>
+<script type="text/javascript">
+	document.getElementById('btn').onclick = function() {
+		document.frm.submit();
+	}
+	
+</script>
+</body>
+</html>
