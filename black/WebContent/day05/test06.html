@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>/* Inner Style Sheet */
+	.box { /* <box> : 여러 태그에 동시 적용 */
+		 display: block; 
+		 float: right; 
+		 width: 50%; 
+		 height: 70px; 
+	}
+</style>
+</head>
+<body>
+<!-- block 태그에는 자동적으로 가상 마진이 생긴다. <float>은 block에 한해서 사용 -->
+	<div style="text-align: center;">
+		<div style="display: inline-block; width: 650px;">
+		<!-- Inline Style -->
+		
+			<div class="box" style="background-color: pink"><p></p></div>
+			<div class="box" style="background-color: aqua"><p></p></div>
+		</div>
+	</div>
+</body>
+</html>

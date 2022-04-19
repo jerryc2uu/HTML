@@ -1,0 +1,81 @@
+.content {
+	text-align: center	
+}
+
+.box {
+	display: inline-block;	
+	width: 650px;
+}
+h1 {
+	background-color: #e91e63;
+	padding: 13px;
+	color: white;
+}
+
+form {
+	padding: 20px;
+	border: 1px sold gray;
+	text-align: left;
+}
+
+.box65{
+	margin-bottom: 10px;
+}
+
+label {
+	display: inline-block;
+	color: gray;
+	width: 20%;
+	text-align: right;
+	font-size: 14pt;
+}
+
+input[type="text"] {
+	display: inline-block; 
+	width: 65%;
+	margin-left: 5px;
+	padding: 5px;
+	text-align: center;	
+} 
+
+#id {
+	width: 45%; 
+	margin-left: 5px; 
+	padding: 5px; 
+	text-align: center;
+}
+
+[type="button"] {
+	width: 20%;
+	height: 30px;
+	color: white;
+	background-color: #2196F3;
+	border: none;	
+}
+
+#bavt {
+	display: inline-block; 
+	width: 400px; 
+	text-align: center;
+}
+
+#avt {
+	display: inline-block; 
+	width: 90px
+}
+
+img {
+	width: 100%; 
+	height: auto;
+}
+
+#w650 {
+	display: inline-block;
+	width: 650px;
+}
+
+#picture {
+	display: inline-block;
+	width: 100px;
+	height: 110px;
+}

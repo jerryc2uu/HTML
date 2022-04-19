@@ -1,0 +1,49 @@
+a:link {
+	height: 30px;
+	border: 1px solid gray;
+	text-decoration: none;
+}
+
+[href="test01.html"]:hover {
+	background-color: aqua;
+}
+
+[href="test01.html"]:active {
+	background-color: orange;
+}
+
+[type="text"] {
+	display: inline-block;
+	width: 400px;
+	height: 25px;
+}
+
+input:focus {
+	color: #ff5722;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* css에서는 style 안의 속성만 수정 가능, 나머지는 자바 스크립트...*/
+	
+input:enabled {
+	margin-bottom: 10px;						
+}
+
+input:disabled {
+	margin-top: 50px; 
+}
+
+:checked {
+	width: 30px;
+	height: 30px;
+	/* background-color: red;  ==> 적용 불가... */
+}
+
+[type="button"] {
+	border: none;
+	width: 200px;
+	height: 30px;
+	background-color: #2196F3;
+	cursor: pointer; /* 커서 손가락 모양으로 변경 */
+}

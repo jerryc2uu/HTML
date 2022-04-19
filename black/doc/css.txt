@@ -1,0 +1,24 @@
+	
+	<<css>>
+	: 웹 문서에 디자인적 요소 적용
+	
+	<css의 구성>
+		1. 선택자	.box
+		2. 속성		color:
+		3. 속성값	blue;
+		
+	<문법>
+	div	{ 
+		width: 960px; 
+		}
+		
+	<적용법>
+	1. Inline Style
+	
+	2. Internal Style Sheet
+	
+	3. External Style Sheet
+		
+		<link type="
+		
+		
