@@ -1,11 +1,18 @@
 .content {
-	text-align: center	
+	text-align: center;
 }
 
 .box {
 	display: inline-block;	
 	width: 650px;
 }
+
+form {
+	 padding: 20px; 
+	 border: 1px solid gray;
+	 text-align: left;
+}
+
 h1 {
 	background-color: #e91e63;
 	padding: 13px;
@@ -45,7 +52,7 @@ input[type="text"] {
 	text-align: center;
 }
 
-[type="button"] {
+label > button {
 	width: 20%;
 	height: 30px;
 	color: white;
@@ -79,3 +86,27 @@ img {
 	width: 100px;
 	height: 110px;
 }
+
+form + div {
+	display: inline-block;
+	font-size: 0pt;
+	color: white;
+	margin-top: 20px;
+}
+
+form + div > button {
+	width: 33%; 
+	height: 35px; 
+	color: white;	
+}
+
+form + div > button:first-child {
+	background-color: #ff5722;
+}
+button:last-child {
+	background-color: #4CAF50;
+}
+button:nth-child(2) {
+	background-color: #2196F3;
+}
+

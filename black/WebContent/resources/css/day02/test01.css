@@ -1,0 +1,25 @@
+.d1 > *:first-child {/* 자식 태그 3개 중 첫번째 태그를 선택 */
+	background-color: red;
+}
+
+.d1 > *:last-child {/* 자식 태그 3개 중 마지막 태그를 선택 */
+	font-size: 16pt;
+	font-style: italic;
+	font-weight: normal;
+	background-color: aqua;
+}
+
+.d1 > *:nth-child(2) {/* 자식 태그 3개 중 두 번째 태그를 선택 */
+	padding: 30px;
+	text-align: center;
+	border-bottom: 1px solid gray;
+}
+
+.d1 > *:nth-child(2n) {/* 자식 태그 3개 중 짝수번째 태그를 선택 */
+	background-color: pink;
+}
+
+.d1 > *:nth-child(2n+1) {/* 자식 태그 3개 중 홀수번째 태그를 선택 */
+	padding: 50px;
+	text-align: right;
+}
