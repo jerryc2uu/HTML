@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="d1" onclick="func01(this)">div1</div> <!--  this : 이 태그 자체, 함수 호출하는 객체 -->	
+	<div id="d2" onclick="func01(this)">div2</div> 	
+	<div id="d3" onclick="func01(this)">div3</div> 	
+	<div id="d4" onclick="func01(this)">div4</div>	
+<script type="text/javascript">
+	function func01(a) {
+		var str = a.innerHTML; /* innerHTML : 텍스트 기억하는 변수 */
+		alert(str);
+		a.innerHTML = str + ' ---  ' + str;
+		a.style.width='300px';
+		a.style.height='50px';
+		a.style.backgroundColor='#e91e63';
+		a.style.color = 'white';
+		a.style.marginTop = '20px';
+		
+		//객체 안의 property(속성)을 변경하는 게 자바스크립트의 기능
+		//제이쿼리 : 자바스크립트의 함수들을 모아놓은 것
+	}
+</script>
+</body>
+</html>

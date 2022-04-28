@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="/black/resources/css/w3.css">
+<link rel="stylesheet" type="text/css" href="/black/resources/css/base.css">
+</head>
+<body>
+	<div class="w3-content mx650 w3-center">
+		<h1 class="w3-pink w3-padding w3-card-4 w3-margin-bottom">평년/윤년 판독기</h1>
+		<div class="w3-boarder w3-card-4 w3-padding">
+			<div class="box w3-boarder-bottom" style="width: 80%; padding: 20px 5px;">
+				<label for="year" class="w3-col m2 w3-right-align w3-text-gray" style="position: relative; right: 10px; font-size: 20pt;">년도 : </label>
+				<input type="text" name="year" id="year" class="w3-col m8 w3-input w3-border">
+				<div class="w3-col m2 w3-button w3-blue" id="btn" style="position: relative; left: 5px;">check</div>
+			</div>
+			<div class="box">
+				<h2 class="w3-text-indigo" id="msg">입력된 해 <span id="m1"></span> 년 은 <span id="m2"></span> 입니다.</h2> <!-- div나 span으로 내용 비워넣고 채운다 -->
+			</div>
+		</div>	
+	</div>
+<script type="text/javascript">
+	//버튼 이벤트
+	document.getElementById('btn').onclick = function() {
+		//할일
+		//1. 입력된 값 읽어오기
+		var syear = document.getElementById('year').value; // 입력태그는 value
+		//2. 읽어온 값 판별
+		var msg = '';
+		if(syear % 400 == 0) {
+			msg = '윤년';
+		} else if(syear % 100 == 0) {
+			msg = '평년';
+		} else if(syear % 4 == 0) {
+			msg = '윤년';
+		} else {
+			msg = '평년';
+		}
+		//3. 출력 태그 찾아서 입력
+		/* document.getElementById('msg').innerHTML = '입력된 해 ' + syear + ' 년 은 ' + msg + ' 입니다.'; */
+		document.getElementById('m1').innerHTML = syear;
+		document.getElementById('m2').innerHTML = msg;
+	}
+</script>
+</body>
+</html>

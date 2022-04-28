@@ -1,0 +1,180 @@
+WEB
+
+    HTML    :   문서의 구조
+    CSS     :   구조에 모양을 더한다.
+    JavaScript : 구조 수정 및 데이터 변경, 태그 제어 (변수로 구성)
+    jQuery  : (함수로 구성)
+
+=========
+
+	<<html 설치 방법>>
+	
+1. 이클립스 설치
+
+	IDE 호출 : Eclipse Java-ee
+
+        구글에 eclipse download 
+        => pakages 
+        => MORE DOWNLOADS 2020 - 06(4.16)
+        => Eclipse IDE for Enterprise Java Developers
+        => Windows x86_64
+        => class 폴더 - html - app, git, source 생성
+        => app 폴더 안에 다운로드 받은 파일 넣기
+        => eclipse 실행, 워크스페이스는 source 폴더로 지정, C:\class\html\source
+        => 프로젝트 static web project를 만든다. 프로젝트 이름 : black
+            [참고]
+                static web project : 이미 만들어진 문서를 서버가 제공하는 프로젝트
+                dynamic web project : 요청 내용에 따라서 그때그때 서버가 문서를 만들어서(상황에 따라 변경하면서) 제공하는 프로젝트
+
+                서버가 응답해주는 문서는 jsp가 아니고 jsp로 만들어낸 html 문서
+       
+       => 환경변수 설정, %NODE_HOME%\
+
+	TOMCAT
+		[참고]
+		프로그램 버전 
+			major.minor.micro   
+		
+	2. Node.js 설치
+		구글에 Node.js
+		=> 16.14.2 (안정적인 구 버전)
+		=> 다른 운영체제
+		=> windows binary(.zip) 64bit
+		
+	
+	3. apache tomcat 다운
+		
+		apache tomcat 검색
+		=> tomcat 8 software downloads
+		=> 64-bit windows zip
+	
+	
+	
+	
+	
+=================================
+
+
+HTML5
+
+인터넷 : 미국 군사 기술
+
+HTML : 문서 작성하는 언어
+
+
+
+일반태그 : 이미지, 내용 등, 서버에 전달은 불가능
+
+
+
+미리 정의되어 있는 태그 : w3c
+사용자 정의 태그 : 데이터 전달 목적
+
+h태그 : h1 - h6
+
+
+속성값
+자바스크립트 ''
+html ""
+
+attribute, property
+
+
+
+class - css
+id - javascript
+	
+	
+		
+	<시작 태그 속성="값">내용</종료 태그>
+	
+	
+	class="클래스명"
+		: 모양 일괄 적용
+	
+	style="CSS 선언"
+		: 태그 자체에서 모양 줄 때
+	
+	id="이름"
+		: id는 unique해야 함, 자바스크립트에서 태그 하나 선택할 때
+		  name은 키값
+		  
+	border :
+	
+	alt : 이미지 못 찾는 경우 표현할 문자열
+	
+	<a> : 입력된 내용(텍스트, 이미지...)에 링크를 준다	
+	
+	
+	
+	시멘트 태그
+		
+		<header>
+		
+		<nav>
+		
+		<section> : 본문 내용
+		
+		<article>
+		
+		
+		
+		
+		
+		
+		
+		
+	padding : 내용물과 태그 간의 상하좌우 간격
+	
+	attribute : 태그의 속성
+	
+	
+	
+	
+	
+	
+	
+		
+	일반태그 : 보여주기만 하는 용도
+	
+	입력태그 : 서버에 데이터 전달
+		
+		1. <form> 입력태그는 <form> 안에...
+			
+			:	<form>을 메모리에 객체로 올려서 그대로 서버에 전달
+				<input>의 속성들(name, id)이 변수가 된다.
+				
+			[속성]
+				1) name : 전달할 데이터 기억하는 변수. <input>, <form>에서만 사용.
+						  <form>은 선택, <input>은 필수
+				
+				2) action : 데이터를 전달(파라미터)할 서버의 주소(url), 페이지는 없을 수 있으니까 url 적는 것
+				3) method : GET(?test=블랙핑크, 256byte 미만), POST(Header에 감춰서 보낸다, 용량 제한 없음)
+				
+		2. <input>
+			
+			[속성]
+				1) type
+					- text : 단일행 입력
+					- password : 단일행 입력
+				
+					- button
+					- submit
+					- reset
+					- radio : 남여 중 하나만		
+					- checkbox : 장바구니
+					
+		3. <textarea> : 여러 행으로 입력받는 태그
+			
+			[속성]
+				1) name : 키값
+				2) value : 데이터 내용
+			
+			[형식]
+				게시글 본문 입력
+				<textarea id="body" name="body"></textarea>
+		
+		4. <field>
+			
+			
+

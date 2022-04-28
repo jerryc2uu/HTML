@@ -10,10 +10,63 @@
 	display: inline-block;
 	width: 650px;
 }
+/* 너비 */
+.p50 {
+	width: 50%;	
+}
+.mx650 {
+	max-width: 650px;
+}
+.mn600 {
+	min-width: 600px;
+}
 
+/* margin */
+.ml10 {
+	margin-left: 10px;
+}
+/* padding */
+.pdl10 {
+	padding-left: 10px;
+}
 /* 컬러 */
 .blue {
 	background-color: #2196F3;	
+	/*
+		16진수 칼라표기법
+		
+		: 16진수 코드 여섯 개를 나열해서 표현
+		
+			앞 두 자리 : red
+			중간 : green
+			뒤 : blue
+			
+			0 ~ 9 
+			10 ~ 15 : a, b, c, d, e, f
+					 10 11 12 13 14 15
+			
+			로 표현..
+			
+			[예]
+				red : #ff0000
+				blue : #0000ff
+				=> 대소문자 구별 안 함
+				
+			
+		rgb[a] 숫자로 표현
+		
+		: 0 ~ 255 사이의 숫자 3개 나열해서 표현
+		  맨 뒤 알파값은 생략 가능, 생략하면 불투명(투명도 1)
+		  사용값은 0 ~ 1 사이의 실수로 표현
+		  1로 갈수록 불투명
+		  0으로 갈수록 투명
+		
+			[예]
+				red : rgb(255, 0, 0)	
+				투명도가 반쯤 있는 빨강의 경우
+					rgba(255, 0, 0, 0.5)
+				
+	*/
 }
 .green {
 	background-color: #4CAF50;
@@ -34,4 +87,7 @@
 }
 .w100 {
 	width: 100px;
+}
+.w200 {
+	width: 200px;
 }

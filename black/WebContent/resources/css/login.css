@@ -1,0 +1,51 @@
+.content {
+	text-align: center;
+}
+
+.box {
+	display: inline-block;	
+	width: 330px;
+}
+
+h1 {
+	display: inline-block;
+	background-color: #e91e63;
+	padding: 13px;
+	color: white;
+	width: 300px;
+}
+form {
+	display: inline-block;
+	text-align: left;
+}
+form > div {
+	margin-bottom : 13px;
+}
+label {
+	display: inline-block;
+	color: gray;
+	width: 20%;
+	text-align: right;
+	font-size: 14pt;
+	width: 100px;
+}
+
+input {
+	display: inline-block;
+	width: 200px;
+	float: right;
+	margin-left: 8px;
+}
+
+button {
+	width: 95%;
+	height: 35px;
+	background-color: #4CAF50;
+	color: white;
+	font-size: 14pt;
+	border: none;
+}
+
+button:hover {
+	background-color: orange;
+}

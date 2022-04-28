@@ -19,12 +19,46 @@
 	
 	3. External Style Sheet
 		
-		<link type="
 		
 	
-	<<이벤트 가상 클래스 선택자>>
 	
 	
 	
 	id : 자바 스크립트에서 태그 하나 선택(id는 겹칠 수 없음..)
 	class : css에서 사용, 공통적으로 여러 태그에 적용 (class명은 겹칠 수 있음..)
+	
+	
+	인라인 태그 : 콘텐트 크기(텍스트 크기)에 따라 사이즈 결정 (자체적으로 width, height 지정 불가)
+		ex) <label> etc
+		
+		
+	padding : border, content 간격
+	margin : border, 다른 태그 간격
+	
+	
+	
+	
+	<div> : block 영역 태그
+	<span> : inline-block 영역 태그
+	
+
+
+	
+	원래는 공백, 엔터, 탭키 등 모두 하나의 공백으로 처리
+	<pre> : 공백, 탭키 등 입력한 형태 그대로 출력해줌
+	
+
+	
+	
+	static : 위치 조정 불가 (배치 흐름에 맡긴다.)
+	relative : 
+	absolute : html 문서 기준 (스크롤 시 감춰짐)
+	fixed : 웹 브라우저 기준으로 고정, 메뉴바.. (스크롤 해도 그대로)
+	
+	
+	
+	
+	
+	
+	line-height: 태그 내용물(컨텐츠)의 높이 지정, 주위태그까지 영향주니까 사용 ㄴㄴ
+	text-decoration : none으로 주면 밑줄 없애줌

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	alert(Number.MAX_VALUE);// NUMBER가 기억 가능한 최대 숫자
+	var kdata=['서울', '부산', '구포', '대구', '인천', '대전', '세종'];
+	//index 	  0		  1 	  2		  3		  4		  5		  6		
+	//index 	  -7	  -6 	  -5	  -4	  -3	  -2	  -1							
+	var str1=kdata.slice(1, 4); // 첫 인덱스부터 마지막 인덱스 이전까지 뽑아냄
+	document.write(kdata + '<br>');
+	document.write(str1);
+	var str2=kdata.slice(2, -1);
+	var str3=kdata.slice(-4, -2);
+	document.write('<h4>str2 : ' + str2 + '</h4>');
+	document.write('<h4>str3 : ' + str3 + '</h4>');
+	document.write('<hr>');
+	document.write('<h3>splice</h3>');
+	document.write('이전 kdata : ' + kdata + '<br>');
+	var str4 = kdata.splice(1, 2); // 인덱스1에서부터 2개 잘라내기
+	document.write('<h4>str4 : ' + str4 + '</h4>');
+	document.write('이후 kdata : ' + kdata + '<br>');//원래 배열을 수정한 결과
+	
+	var str5=kdata.splice(2, 2, '강릉', '아산');// 인덱스1에서부터 2개 잘라내고 입력한 데이터로 교체
+	document.write('<h4>str5 : ' + str5 + '</h4>');
+	document.write('이후 kdata : ' + kdata + '<br>');//원래 배열을 수정한 결과
+	
+	var str6=kdata.splice(2, Number.MAX_VALUE); // 2에서부터 전부 삭제
+	document.write("삭제 데이터 : " + str6 + "<br>");
+	document.write('이후 kdata : ' + kdata + '<br>');//원래 배열을 수정한 결과
+</script>
+</head>
+<body>
+
+</body>
+</html>

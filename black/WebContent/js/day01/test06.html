@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var globValue1;
+	globValue2 = 0 
+	
+	function test01() {
+		var locValue;
+		globValue = 999; // var 생략 시 전역변수.. 함수 밖에서도 사용 가능한 변수가 된다.
+		locValue = 10;
+	}
+	
+	test01(); // 함수 실행 안 하면 오류남
+	console.log(globValue);
+	console.log(locValue); // 전역 변수가 아니기 때문에 오류남
+</script>
+</head>
+<body>
+
+</body>
+</html>

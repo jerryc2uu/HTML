@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//이름과 숫자를 입력받아 그 이름의 학생이 덧셈을 해서 반환해주는 기능의 함수
+	function addNum(name, no) {
+		//학생 이름으로 작업 메세지 출력
+		document.write('<h1>' + name + ' 학생이 ' + no + ' 까지의 숫자를 더하는 작업을 합니다.</h1>');
+		//덧셈의 결과값을 만든다..
+		var sum = 0;
+		for(var i = 0 ; i <= no ; i++) {
+			sum += i;
+		}
+		return sum;
+	}
+	/* 
+		[함수 작성 형식]
+			var 변수이름 = function(매개변수) {
+				실행내용
+			};
+			=> 이 때 대입된 변수 이름은 자동으로 함수 이름이 된다.
+	*/
+	
+	//함수 호출
+
+	/* 	var result = addNum('제니', 10); */
+
+	/* 
+		자바스크립트에서는 함수도 객체로 취급한다. 따라서 함수를 변수에 입력할 수 있다.
+		자바에서는 함수의 실행 결과값만 변수에 담을 수 있다.
+		이 때 변수에 대입한 함수는 변수를 이용한 형태로 호출할 수 있다.
+		함수를 호출해서 대입해서는 안 된다. addNum() ==> X
+	*/
+	
+	var func01 = addNum;
+ 	
+ 	var name = '홍길동';
+ 	var soo = 100;
+	var result = func01(name, soo);
+	
+	document.write('<h1>'+ name + '이 0부터 ' + soo + ' 까지 더한 값은 ' + result + ' 입니다.</h1>');
+	
+	
+	/* document.getElementById('btn').onclick = function() {//이름 없는 무명 함수
+		var no = 10;	
+	} */
+</script>
+</head>
+<body>
+
+</body>
+</html>

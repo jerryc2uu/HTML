@@ -1,0 +1,59 @@
+.content {
+	text-align: center;
+}
+.box {
+	display: inline-block;
+	width: 650px;
+}
+h1 {
+	background-color: #e91e63;
+	padding: 13px;
+	color: white;
+}
+h1 + div {
+	height: 500px;
+	border: 1px solid gray;
+}
+
+h1 + div > div:first-child {
+	float: left;
+	width: 200px;
+	height: 300px;
+	border: 1px solid gray;
+	margin: 30px;
+	margin-top : 80px;
+}
+
+h1 + div > div:last-child {
+	float: left;
+	margin: 30px;
+	margin-top: 60px;
+}
+
+.box > div:nth-child(3){
+	display: inline-block;
+	font-size: 0px;
+	width: 650px;
+	margin-top : 20px;
+}
+
+button {
+	width: 33%; 
+	height: 35px; 
+	color: white;
+	border: none;
+}
+
+.box > div > button:hover {
+	background-color: orange;
+}
+
+button:first-child {
+	background-color: #ff5722;
+}
+button:last-child {
+	background-color: #4CAF50;
+}
+button:nth-child(2) {
+	background-color: #2196F3;
+}
