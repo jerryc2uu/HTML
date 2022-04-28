@@ -36,7 +36,18 @@
 	<div class="box">div6</div>
 	<div class="box">div7</div>
 <script type="text/javascript">
-	docu.box
+	var el = document.getElementsByClassName('box');
+	//alert(el.length);
+	
+	for(var i = 0 ; i < el.length ; i++) {
+		el[i].setAttribute('class', 'box ' + clrList[i]);
+	}
+	// 클래스가 box인 태그 모두 선택해서 배열로 반환
+/* 	for(var i = 0 ; i < boxes.length ; i++) {
+		var title = boxes[i].innerHTML 
+		title = clrList[i];
+		document.write(title);
+	}  */
 </script>
 </body>
 </html>
