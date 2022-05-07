@@ -1,0 +1,42 @@
+[
+	{	
+		"bno" : "10001",
+		"id" : "jerry",
+		"savename": "img_avatar1.png",
+		"title": "나는 먹보 강아지랍니다.",
+		"body" : "나는 늘 배가 고프다.\r\n밥을 주세요!!!\r\n엄마 큰누나가 나한테 돼지래요!!",
+		"wdate" : "2022년 05월 03일"
+	},
+	{
+		"bno" : "10002",
+		"id" : "karina",
+		"savename" : "img_avatar4.png",
+		"title": "블랙맘바",
+		"body" : "넌 광야를 떠돌고 있어\r\n(아야야야야야야)\r\n나의 분신을 찾고 싶어\r\n(아야야야야야야)\r\nHey ma-mamba",
+		"wdate" : "2000년 4월 11일"
+	},
+	{
+		"bno" : "10003",
+		"id" : "winter",
+		"savename" : "img_avatar5.png",
+		"title" : "NextLevel",
+		"body" : "I'm on the next level yeah\r\n절대적 룰을 지켜\r\n내 손을 놓지 말아\r\n결속은 나의 무기",
+		"wdate" : "2001년 01월 01일"
+	},
+	{
+		"bno" : "10004",
+		"id" : "Giselle",
+		"savename" : "img_avatar5.png",
+		"title" : "savage",
+		"body" : "위기에 빠진 날 지켜준 건 너였어\r\n(My nævis, we love you)\r\nMy victory, 하나의 synk dive\r\n모두 네가 만들어준 기회란 거",
+		"wdate" : "2000년 10월 30일"
+	},
+	{
+		"bno" : "10005",
+		"id" : "ningning",
+		"savename" : "img_avatar4.png",
+		"title" : "좋은 노래 추천합니다~!! 러블리즈 - 그 시절 우리가 사랑했던 우리",
+		"body" : "잊지 마\r\n우리가 우리였던 날의 눈부심과\r\n그 안에 그림처럼 나란했던 두 사람\r\n정말 꿈보다 꿈같잖아\r\n그 시절의 너와 나",
+		"wdate" : "2002년 10월 23일"
+	}
+]

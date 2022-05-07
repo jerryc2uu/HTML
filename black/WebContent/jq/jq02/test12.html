@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Study</title>
+<link rel="stylesheet" type="text/css" href="/black/resources/css/w3.css">
+<link rel="stylesheet" type="text/css" href="/black/resources/css/base.css">
+<script type="text/javascript" src="/black/resources/js/jquery-3.6.0.min.js"></script>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//home버튼 이벤트 처리
+		$('#hbtn').click(function(){
+			$(location).attr('href', '/black/');
+		});
+		//리셋버튼 이벤트 처리
+		$('#rbtn').click(function(){
+			document.frm.reset();
+		});
+		//체크버튼 이벤트 처리
+		$('#ibtn').click(function(){
+			//할일
+			//입력된 아이디 읽어온다
+			var sid = $('#id').val();
+			//유효성 검사
+			if(!sid) {
+				//입력된 데이터가 없으므로 함수를 즉시 종료한다.
+				return;
+			} 
+			/* 
+				정규표현식 검사
+					전방 탐색자, 후방 탐색자
+					
+					==> 비밀번호의 경우 반드시 대문자 하나 소문자 하나 숫자 하나 특수문자 하나가 포함돼야 하는 경우
+					    처리는 전방탐색자
+			*/
+			
+			//비동기통신을 해야 하므로
+			$.ajax({
+				url: '/black/idCheck.pink',//요청할 주소 기입
+				type: 'POST', //데이터전송방식 get
+				dataType: 'json',//결과 문서 형식(html, sml, txt, json)
+				data: {
+					//서버에게 전달할 데이터 작성
+					//자바스크립트 객체 형태로 작성
+					id: sid
+				},
+				success: function(data){
+					//서버와 통신이 이루어졌을 때 실행되는 함수
+					//매개변수에는 응답문서의 내용이 채워지게 된다.
+					/* 
+						우리의 경우
+						data = {'result': 'OK'};
+					*/
+					var result = data.result;
+					if(result == 'OK') {
+						//이 경우 사용 가능 아이디이므로
+						alert('사용 가능한 아이디입니다.');
+					} else {
+						alert('## 이미 사용 중인 아이디입니다. ##');
+						$('#id').val('');//아이디 리셋
+					}
+				},
+				error: function(){
+					alert('### 통신에러 ###');
+				}
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<div class="w3-content mx650 w3-center">
+		<h1 class="w3-blue w3-padding w3-card-4 w3-margin-bottom w3-round-large" id="h1">Login</h1>
+		<form method="GET" action="/black/idCheck.pink" name="frm" id="frm" 
+				class="w3-col w3-card-4 w3-padding w3-margin-top w3-round-large">
+			<div class="w3-col w3-margin-top">
+				<label for="id" class="w3-col m3 w3-right-align w3-text-grey">아 이 디 : </label>
+				<input type="text" id="id" name="id" style="margin-left: 10px;"
+						class="w3-col m7 w3-input w3-border" placeholder="아이디를 입력하세요!">
+			</div>
+		</form>
+		<div class="w3-col w3-margin-top w3-card-4">
+			<div class="w3-third w3-button w3-green w3-hover-lime" id="hbtn">Home</div>
+			<div class="w3-third w3-button w3-blue w3-hover-aqua" id="ibtn">idCheck</div>
+			<div class="w3-third w3-button w3-pink w3-hover-orange" id="rbtn">Reset</div>
+		</div>
+	</div>
+</body>
+</html>

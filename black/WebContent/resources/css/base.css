@@ -1,3 +1,16 @@
+.hidden {
+	display: none;
+}
+.overhidden {
+	overflow: hidden;
+}
+
+.leftclear {
+	clear: left;
+}
+.rightclear {
+	clear: right;
+}
 .content {
 	text-align: center;
 }
@@ -9,6 +22,13 @@
 .box65 {
 	display: inline-block;
 	width: 650px;
+}
+.wh100 {
+	width: 100px;
+	height: 100px;
+}
+.ml10 {
+	margin-left: 10px;
 }
 /* 너비 */
 .p50 {
@@ -26,8 +46,14 @@
 	margin-left: 10px;
 }
 /* padding */
+.pd10 {
+	padding: 10px;
+}
 .pdl10 {
 	padding-left: 10px;
+}
+.pdr10 {
+	padding-right: 10px;
 }
 /* 컬러 */
 .blue {
@@ -91,3 +117,33 @@
 .w200 {
 	width: 200px;
 }
+
+/* 아바타 관련 클래스 */
+.avtbox {
+	width: 148px;
+	height: 148px;
+	border: 1px solid gray;
+}
+
+
+.avtimg {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

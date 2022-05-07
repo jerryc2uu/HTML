@@ -1,0 +1,86 @@
+
+	자바스크립트 : property + 함수 약간
+	제이쿼리 : 함수들의 집합
+	
+	jquery = $
+	
+	
+	최상위 객체 : jquery
+	
+	
+	jqeury 객체 =/= 자바스크립트 객체
+	
+	
+	
+	
+	자바스크립트 객체
+	document
+	location
+	
+	
+	
+	모든 작업의 최우선 순위 : 태그 선택
+	
+	
+	앞에서 선택한 태그의 배열 중에서 첫번째것만 선택
+	
+	 
+	 
+	 * : 0개 이상
+	 + " 1개 이상
+	 
+	 
+	 radio, checkbox  : checked
+	 
+	 
+	 
+	 입력태그 : value, name 속성값 필수
+	 일반태그 : innerHTML
+	 
+	 
+	 
+	 자바스크립트 reset() => 제이쿼리에 없음
+	 
+	 자바스크립트 내장 객체, 내장 함수 공부..
+	 
+	 
+	 > : 직속 하위태그
+	 공백 : 모든 하위태그
+	 
+	 
+	 제이쿼리함수 반환값 : 제이쿼리 객체
+	 
+	 
+	 
+	 forEach(data, index)
+	 $.each(index, data)
+	 
+	 map() : 원래 배열 데이터로 새 배열 데이터 만듦
+	 $.map(배열, 함수) 
+	 
+	 
+	 onload() : body 완성되면 함수 실행
+	 
+	 
+	 append() : 태그, 추가할 내용
+	 appendTo() : 추가할 내용, 태그
+	 
+	 
+	 
+	 
+	 contents()
+	 = 자바스크립트 child
+	 
+	 
+	 
+	UPDATE
+		board
+	SET
+		title = ?,
+		body = ?
+	WHERE
+		bno = ?
+	;
+	
+	
+	

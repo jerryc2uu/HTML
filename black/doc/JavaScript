@@ -219,3 +219,75 @@
 	
 	
 	return false : href 기본값 없애줌
+	
+
+
+	document 하위 객체
+		frame
+		form
+		image
+		
+	
+	<<window 객체 하위 함수>>
+		alert
+		confirm
+		
+		
+	<<location 객체>>
+		
+		parseInt() : 모든 데이터를 정수로 반환
+		reload()
+	
+	<<screen 객체>>
+	
+	
+  *	<<document 객체>>
+	
+	ById 빼고는 모두 배열로 선택된다..
+	
+	document.querySelectorAll()
+	
+	style='HTML속성값'
+	style.javascript속성값
+	
+	
+	
+	
+	## 자바스크립트 이후 추가로 공부..
+	M - MongoDB
+	E - Express
+	A - AngularJS
+	N - Node.js
+	
+	
+	
+	
+	<<form 객체>> 
+	: name 속성값으로 접근하자
+
+	
+		window.form_name.태그.value;
+	
+		reset(), submit() => form만 가능.. div나 input은 불가능
+		
+		
+	<<JSON 확장자>>
+		: 자바의 맵
+		xml은 태그로 전달해서 불편
+		
+	
+	porperty = 속성 = 변수
+		
+		
+	
+	콜백함수 = 매개변수로 입력된 함수
+	
+	
+	
+	태그 2개 겹친 경우 : addEventListner, removeEventListner
+	
+	
+	
+	
+	
+	css, javascript : 태그 선택부터 시작, 속성 부여 or 함수 호출
