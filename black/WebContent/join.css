@@ -21,7 +21,8 @@ form {
 }
 
 .box10 {
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
+	clear: both;
 }
 
 label {
@@ -39,7 +40,7 @@ label {
 	text-align: center;
 }
 
-#id + button {
+#idcheck {
 	width: 115px;
 	height: 30px;
 	color: white;
@@ -47,8 +48,21 @@ label {
 	border: none;	
 }
 
-#id + button:hover {
-	background-color: orange;
+.check {
+	text-align: center;
+}
+
+#checkmsg {
+	display: inline-block;
+	margin: 0px;
+	margin-bottom: 3px;
+	
+}
+
+#pwcheck {
+	display: inline-block none;
+	margin: 0px;
+	margin-bottom: 3px;
 }
 
 form > div > input {
@@ -70,6 +84,10 @@ form > div > input {
 	width: 20px;
 	height: 20px;
 	border: 1px	
+}
+
+#avatar {
+	display: none;
 }
 
 .avt {
@@ -114,18 +132,18 @@ form + div > button {
 	color: white;
 	border: none;
 }
-form + div > button:hover {
-	background-color: orange;
+button:hover {
+	background-color: orange !important;
 }
 
-button:first-child {
+#rbtn {
 	background-color: #ff5722;
 }
-button:last-child {
-	background-color: #2196F3;
-}
-button:nth-child(2) {
+#hbtn {
 	background-color: #4CAF50;
+}
+#jbtn {
+	background-color: #2196F3;
 }
 
 .gen > * {
